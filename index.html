@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Otieno - Cybersecurity Professional</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- Scroll Buttons -->
+    <button class="scroll-btn scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <button class="scroll-btn scroll-bottom" aria-label="Scroll to bottom">
+        <i class="fas fa-arrow-down"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#home">John Otieno</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#achievements">Achievements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <div class="profile-container">
+                    <img src="th.jpg" alt="John Otieno" class="profile-image" data-aos="zoom-in">
+                </div>
+                <h1 class="hero-title">John Otieno</h1>
+                <p class="hero-tagline">Telecommunications & IT Engineer || Security Analyst || Detail-Oriented Problem Solver</p>
+                <div class="cta-buttons" data-aos="fade-up" data-aos-delay="200">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="assets/documents/John_Otieno_Resume.pdf" class="btn btn-outline" download="John_Otieno_Resume.pdf">Download CV</a>
+                    <a href="#contact" class="btn btn-outline">Let's Connect</a>
+                    <a href="#certifications" class="btn btn-outline">View Certifications</a>
+                </div>
+                <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#about" class="scroll-link">
+                        <span class="scroll-text">Scroll Down</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="hero-background">
+            <div class="tech-pattern"></div>
+        </div> -->
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">About Me</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <p class="lead" data-aos="fade-up" data-aos-delay="100">
+                        A results-oriented Telecommunications & IT Engineer and dedicated Security Analyst, distinguished by a strong focus on cybersecurity. As a Detail-Oriented Problem Solver, I combine extensive experience in IT support, networking, and system administration with a proactive approach to identifying and mitigating digital threats. My expertise extends to leveraging data for system performance improvements and continuously adapting to evolving security landscapes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3><i class="fas fa-shield-alt"></i> Cybersecurity</h3>
+                    <ul>
+                        <li>Cybersecurity & Threat Analysis</li>
+                        <li>Incident Management</li>
+                        <li>IT Policy Compliance & Risk Management</li>
+                        <li>IT Service Management</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="fas fa-network-wired"></i> Network & System Administration</h3>
+                    <ul>
+                        <li>Network Administration & Security</li>
+                        <li>System Administration (Windows, Linux, MacOS)</li>
+                        <li>IT Asset Management & Documentation</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3><i class="fas fa-headset"></i> IT Support</h3>
+                    <ul>
+                        <li>IT Support & Troubleshooting</li>
+                        <li>Customer Service & User Support</li>
+                        <li>Help Desk Operations</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                    <h3><i class="fas fa-chart-line"></i> Data & Analytics</h3>
+                    <ul>
+                        <li>Data Analysis & Predictive Modeling</li>
+                        <li>Database Management</li>
+                        <li>Algorithmic Trading & Machine Learning</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                    <h3><i class="fas fa-cloud"></i> Cloud & Technical Tools</h3>
+                    <ul>
+                        <li>Cloud Computing</li>
+                        <li>Technical Documentation</li>
+                        <li>Emerging Technologies</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
+                    <h3><i class="fas fa-users"></i> Professional Skills</h3>
+                    <ul>
+                        <li>Problem-Solving & Analytical Thinking</li>
+                        <li>Verbal & Written Communication</li>
+                        <li>Time Management & Multitasking</li>
+                        <li>Attention to Detail</li>
+                        <li>Adaptability & Flexibility</li>
+                        <li>Leadership</li>
+                        <li>Teamwork</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Community Development & Data Management Volunteer</h3>
+                            <h4>Plenty4all CBO</h4>
+                        </div>
+                        <div class="experience-duration">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>May 2023 - Mar 2025 · 1 yr 11 mos</span>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <ul>
+                            <li>Played a key role in data collection and analysis, contributing to program evaluation and reporting.</li>
+                            <li>Developed compelling grant proposals to secure funding for critical initiatives.</li>
+                            <li>Delivered educational sessions to children, fostering their learning and development.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Hackathon Facilitator</h3>
+                            <h4>ONE DEV</h4>
+                        </div>
+                        <div class="experience-duration">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>May 2024 · 1 mo</span>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <ul>
+                            <li>Supported Deliverables</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>BRAIN Researcher - Freelance</h3>
+                            <h4>WorldQuant</h4>
+                        </div>
+                        <div class="experience-duration">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>Dec 2024 – May 2025</span>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <ul>
+                            <li>Developed and tested quantitative models to analyze financial data trends.</li>
+                            <li>Collaborated with cross-functional teams to improve algorithm accuracy.</li>
+                            <li>Prepared detailed reports to communicate research findings to stakeholders.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>BRAIN Research Intern</h3>
+                            <h4>WorldQuant</h4>
+                        </div>
+                        <div class="experience-duration">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>Mar 2024 – Dec 2024</span>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <ul>
+                            <li>Assisted in data collection and preprocessing for machine learning projects.</li>
+                            <li>Conducted exploratory data analysis to identify key market signals.</li>
+                            <li>Supported senior researchers in backtesting trading strategies.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>IT Support - Industrial Attachment</h3>
+                            <h4>Kenya Medical Training College</h4>
+                        </div>
+                        <div class="experience-duration">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>May 2024 – July 2024</span>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <ul>
+                            <li>Provided technical support for software and hardware issues across departments.</li>
+                            <li>Assisted in network troubleshooting and maintenance tasks.</li>
+                            <li>Trained staff on basic computer usage and security best practices.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Projects</h2>
+            <div class="row g-4">
+                <!-- Ecofarm Project -->
+                <div class="col-md-8 mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="ecofarm.jpg" alt="Ecofarm Project" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Nzau8/EcoFarm-Connect" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                                    <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Ecofarm</h3>
+                                <span class="project-date">Dec 2024 - Apr 2025</span>
+                            </div>
+                            <p class="project-description">A secure and sustainable agricultural e-commerce platform connecting local farmers with consumers, featuring robust cybersecurity measures and comprehensive access control.</p>
+                            <div class="project-features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>Role-Based Access Control (RBAC)</li>
+                                    <li>Security Auditing & Logging</li>
+                                    <li>Vulnerability Assessment</li>
+                                    <li>Secure Password Hashing</li>
+                                </ul>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Cybersecurity</span>
+                                <span class="tech-tag">E-commerce</span>
+                                <span class="tech-tag">RBAC</span>
+                                <span class="tech-tag">Security Audit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Achievements</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <p class="lead text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+                        A curated collection of academic, technical, and practical accomplishments reflecting growth, curiosity, and a hands-on approach to learning. This section includes verified certifications, lab-based experience, competitive challenges, scholarly contributions, and notable recognitions — all aligned with a strong foundation in technology, cybersecurity, and data science.
+                    </p>
+                </div>
+            </div>
+            <div class="achievements-links" data-aos="fade-up" data-aos-delay="200">
+                <a href="#certifications" class="achievement-link">
+                    <i class="fas fa-certificate"></i>
+                    <span>Certifications</span>
+                </a>
+                <a href="#lab-challenges" class="achievement-link">
+                    <i class="fas fa-flask"></i>
+                    <span>Lab Challenges</span>
+                </a>
+                <a href="#publications" class="achievement-link">
+                    <i class="fas fa-trophy"></i>
+                    <span>Publications</span>
+                </a>
+                <a href="#academic" class="achievement-link">
+                    <i class="fas fa-book"></i>
+                    <span>Academic</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Licenses & Certifications</h2>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <!-- Hack The Box -->
+                    <div class="certification-group" data-aos="fade-up">
+                        <div class="certification-group-header">
+                            <img src="assets/images/logos/hackthebox.png" alt="Hack The Box Logo" class="platform-logo">
+                            <h3>Hack The Box</h3>
+                        </div>
+                        <div class="certification-list">
+                            <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="certification-header">
+                                    <div class="certification-title">
+                                        <h3>Getting Started</h3>
+                                    </div>
+                                    <span class="certification-date">May 2025</span>
+                                </div>
+                                <div class="certification-issuer">
+                                    <i class="fas fa-building"></i>
+                                    Hack The Box
+                                    <span class="verified-badge">
+                                        <i class="fas fa-check-circle"></i>
+                                        Verified
+                                    </span>
+                                </div>
+                                <div class="certification-details">
+                                    <div class="certification-footer">
+                                        <div class="certification-tags">
+                                            <span>Penetration Testing</span>
+                                            <span>Security Fundamentals</span>
+                                        </div>
+                                        <a href="#" class="certification-link" title="View Certificate">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="certification-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="certification-header">
+                                    <div class="certification-title">
+                                        <h3>Introduction to HTB</h3>
+                                    </div>
+                                    <span class="certification-date">May 2025</span>
+                                </div>
+                                <div class="certification-issuer">Hack The Box</div>
+                            </div>
+                            <div class="certification-item" data-aos="fade-up" data-aos-delay="300">
+                                <div class="certification-header">
+                                    <div class="certification-title">
+                                        <h3>Introduction to Web Applications</h3>
+                                    </div>
+                                    <span class="certification-date">May 2025</span>
+                                </div>
+                                <div class="certification-issuer">Hack The Box</div>
+                            </div>
+                            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+                                <div class="certification-header">
+                                    <div class="certification-title">
+                                        <h3>Linux Fundamentals</h3>
+                                    </div>
+                                    <span class="certification-date">May 2025</span>
+                                </div>
+                                <div class="certification-issuer">Hack The Box</div>
+                            </div>
+                            <div class="certification-item" data-aos="fade-up" data-aos-delay="500">
+                                <div class="certification-header">
+                                    <div class="certification-title">
+                                        <h3>Windows Fundamentals</h3>
+                                    </div>
+                                    <span class="certification-date">May 2025</span>
+                                </div>
+                                <div class="certification-issuer">Hack The Box</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coursera -->
+                    <div class="certification-group" data-aos="fade-up">
+                        <div class="certification-group-header">
+                            <img src="assets/images/logos/coursera.png" alt="Coursera Logo" class="platform-logo">
+                            <h3>Coursera</h3>
+                        </div>
+                        <div class="certification-list">
+                            <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="certification-header">
+                                    <div class="certification-title">
+                                        <h3>Google AI Essentials</h3>
+                                    </div>
+                                    <span class="certification-date">June 2024</span>
+                                </div>
+                                <div class="certification-issuer">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    Coursera
+                                    <span class="verified-badge">
+                                        <i class="fas fa-check-circle"></i>
+                                        Verified
+                                    </span>
+                                </div>
+                                <div class="certification-details">
+                                    <div class="credential-id">
+                                        <i class="fas fa-fingerprint"></i>
+                                        Credential ID: FJUBBDVS4ZPK
+                                    </div>
+                                    <div class="certification-footer">
+                                        <div class="certification-tags">
+                                            <span>Artificial Intelligence</span>
+                                            <span>Machine Learning</span>
+                                            <span>Data Analysis</span>
+                                        </div>
+                                        <a href="#" class="certification-link" title="View Certificate">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="certification-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="certification-header">
+                                    <div class="certification-title">
+                                        <h3>Detection and Response</h3>
+                                    </div>
+                                    <span class="certification-date">June 2024</span>
+                                </div>
+                                <div class="certification-issuer">Coursera</div>
+                            </div>
+                            <div class="certification-item" data-aos="fade-up" data-aos-delay="300">
+                                <div class="certification-header">
+                                    <div class="certification-title">
+                                        <h3>Assets, Threats, and Vulnerabilities</h3>
+                                    </div>
+                                    <span class="certification-date">March 2024</span>
+                                </div>
+                                <div class="certification-issuer">Coursera</div>
+                            </div>
+                            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+                                <div class="certification-header">
+                                    <div class="certification-title">
+                                        <h3>Linux and SQL Fundamentals</h3>
+                                    </div>
+                                    <span class="certification-date">March 2024</span>
+                                </div>
+                                <div class="certification-issuer">Coursera</div>
+                            </div>
+                            <div class="certification-item" data-aos="fade-up" data-aos-delay="500">
+                                <div class="certification-header">
+                                    <div class="certification-title">
+                                        <h3>Foundations of Cybersecurity</h3>
+                                    </div>
+                                    <span class="certification-date">February 2024</span>
+                                </div>
+                                <div class="certification-issuer">Coursera</div>
+                            </div>
+                            <div class="certification-item" data-aos="fade-up" data-aos-delay="600">
+                                <div class="certification-header">
+                                    <div class="certification-title">
+                                        <h3>Manage Security Risks</h3>
+                                    </div>
+                                    <span class="certification-date">February 2024</span>
+                                </div>
+                                <div class="certification-issuer">Coursera</div>
+                            </div>
+                            <div class="certification-item" data-aos="fade-up" data-aos-delay="700">
+                                <div class="certification-header">
+                                    <div class="certification-title">
+                                        <h3>Networks and Network Security</h3>
+                                    </div>
+                                    <span class="certification-date">February 2024</span>
+                                </div>
+                                <div class="certification-issuer">Coursera</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ISC2 -->
+                    <div class="certification-group" data-aos="fade-up">
+                        <div class="certification-group-header">
+                            <img src="assets/images/logos/isc2.jpeg" alt="ISC2 Logo" class="platform-logo">
+                            <h3>ISC2</h3>
+                        </div>
+                        <div class="certification-list">
+                            <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="certification-header">
+                                    <div class="certification-title">
+                                        <h3>CC Domain 1: Security Principles</h3>
+                                    </div>
+                                    <span class="certification-date">April 2025</span>
+                                </div>
+                                <div class="certification-issuer">ISC2</div>
+                                <div class="certification-tags">
+                                    <span>Information Security</span>
+                                    <span>Physical Security</span>
+                                    <span>Network Security</span>
+                                </div>
+                            </div>
+                            <div class="certification-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="certification-header">
+                                    <div class="certification-title">
+                                        <h3>ISC2 Candidate</h3>
+                                    </div>
+                                    <span class="certification-date">April 2025</span>
+                                </div>
+                                <div class="certification-issuer">ISC2</div>
+                                <div class="certification-expiry">Expires April 2026</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LinkedIn Learning -->
+                    <div class="certification-group" data-aos="fade-up">
+                        <div class="certification-group-header">
+                            <img src="assets/images/logos/linkedin.jpg" alt="LinkedIn Learning Logo" class="platform-logo">
+                            <h3>LinkedIn Learning</h3>
+                        </div>
+                        <div class="certification-list">
+                            <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="certification-header">
+                                    <div class="certification-title">
+                                        <h3>CompTIA IT Fundamentals</h3>
+                                    </div>
+                                    <span class="certification-date">April 2025</span>
+                                </div>
+                                <div class="certification-issuer">LinkedIn Learning</div>
+                                <div class="certification-tags">
+                                    <span>Network Administration</span>
+                                </div>
+                            </div>
+                            <div class="certification-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="certification-header">
+                                    <div class="certification-title">
+                                        <h3>Cybersecurity Foundations: GRC</h3>
+                                    </div>
+                                    <span class="certification-date">April 2025</span>
+                                </div>
+                                <div class="certification-issuer">LinkedIn Learning</div>
+                                <div class="certification-tags">
+                                    <span>GRC</span>
+                                    <span>Cybersecurity</span>
+                                </div>
+                            </div>
+                            <div class="certification-item" data-aos="fade-up" data-aos-delay="300">
+                                <div class="certification-header">
+                                    <div class="certification-title">
+                                        <h3>IT Help Desk for Beginners</h3>
+                                    </div>
+                                    <span class="certification-date">April 2025</span>
+                                </div>
+                                <div class="certification-issuer">LinkedIn Learning</div>
+                                <div class="certification-tags">
+                                    <span>Help Desk Support</span>
+                                    <span>Technical Support</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TryHackMe -->
+                    <div class="certification-group" data-aos="fade-up">
+                        <div class="certification-group-header">
+                            <img src="assets/images/logos/tryhackme.jpg" alt="TryHackMe Logo" class="platform-logo">
+                            <h3>TryHackMe</h3>
+                        </div>
+                        <div class="certification-list">
+                            <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="certification-header">
+                                    <div class="certification-title">
+                                        <h3>Python Basics</h3>
+                                    </div>
+                                    <span class="certification-date">May 2025</span>
+                                </div>
+                                <div class="certification-issuer">TryHackMe</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mastermind -->
+                    <div class="certification-group" data-aos="fade-up">
+                        <div class="certification-group-header">
+                            <img src="assets/images/logos/mastermind.jpg" alt="Mastermind Logo" class="platform-logo">
+                            <h3>Mastermind</h3>
+                        </div>
+                        <div class="certification-list">
+                            <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="certification-header">
+                                    <div class="certification-title">
+                                        <h3>ISO/IEC 27001:2022 Lead Auditor</h3>
+                                    </div>
+                                    <span class="certification-date">March 2025</span>
+                                </div>
+                                <div class="certification-issuer">
+                                    <i class="fas fa-certificate"></i>
+                                    Mastermind
+                                    <span class="verified-badge">
+                                        <i class="fas fa-check-circle"></i>
+                                        Verified
+                                    </span>
+                                </div>
+                                <div class="certification-details">
+                                    <div class="credential-id">
+                                        <i class="fas fa-fingerprint"></i>
+                                        Credential ID: y2qj5oqe20
+                                    </div>
+                                    <div class="certification-expiry">
+                                        <i class="fas fa-clock"></i>
+                                        Expires March 2028
+                                    </div>
+                                    <div class="certification-footer">
+                                        <div class="certification-tags">
+                                            <span>Information Security</span>
+                                            <span>Audit</span>
+                                            <span>Compliance</span>
+                                        </div>
+                                        <a href="#" class="certification-link" title="View Certificate">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- WorldQuant -->
+                    <div class="certification-group" data-aos="fade-up">
+                        <div class="certification-group-header">
+                            <img src="assets/images/logos/worldquant.jpg" alt="WorldQuant Logo" class="platform-logo">
+                            <h3>WorldQuant</h3>
+                        </div>
+                        <div class="certification-list">
+                            <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="certification-header">
+                                    <div class="certification-title">
+                                        <h3>WorldQuant Challenge</h3>
+                                    </div>
+                                    <span class="certification-date">December 2023</span>
+                                </div>
+                                <div class="certification-issuer">WorldQuant</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lab Challenges Section -->
+    <section id="lab-challenges" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Lab Challenges</h2>
+            <div class="row g-4">
+                <!-- TryHackMe Challenges -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="challenge-card">
+                        <div class="challenge-header">
+                            <img src="https://tryhackme.com/img/favicon.png" alt="TryHackMe" class="platform-icon">
+                            <h3>TryHackMe</h3>
+                        </div>
+                        <div class="challenge-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-flag"></i>
+                                <span>Machines Completed: 25</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>Rank: Hacker</span>
+                            </div>
+                        </div>
+                        <div class="challenge-progress">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="progress-text">75% Complete</span>
+                        </div>
+                        <div class="challenge-list">
+                            <div class="challenge-item completed">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Basic Pentesting</span>
+                            </div>
+                            <div class="challenge-item completed">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Vulnversity</span>
+                            </div>
+                            <div class="challenge-item completed">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Blue</span>
+                            </div>
+                            <div class="challenge-item">
+                                <i class="fas fa-circle"></i>
+                                <span>HackPark</span>
+                            </div>
+                        </div>
+                        <a href="https://tryhackme.com/p/yourusername" target="_blank" class="challenge-link">
+                            View Profile <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- HackTheBox Challenges -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="challenge-card">
+                        <div class="challenge-header">
+                            <img src="https://www.hackthebox.com/images/logo-htb.svg" alt="HackTheBox" class="platform-icon">
+                            <h3>HackTheBox</h3>
+                        </div>
+                        <div class="challenge-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-flag"></i>
+                                <span>Machines Completed: 15</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>Rank: Script Kiddie</span>
+                            </div>
+                        </div>
+                        <div class="challenge-progress">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="progress-text">60% Complete</span>
+                        </div>
+                        <div class="challenge-list">
+                            <div class="challenge-item completed">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Starting Point</span>
+                            </div>
+                            <div class="challenge-item completed">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Lame</span>
+                            </div>
+                            <div class="challenge-item completed">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Legacy</span>
+                            </div>
+                            <div class="challenge-item">
+                                <i class="fas fa-circle"></i>
+                                <span>Devel</span>
+                            </div>
+                        </div>
+                        <a href="https://app.hackthebox.com/profile/yourusername" target="_blank" class="challenge-link">
+                            View Profile <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Publications</h2>
+            <div class="row g-4">
+                <!-- Medium Article -->
+                <div class="col-md-8 mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    <div class="challenge-card">
+                        <div class="challenge-header">
+                            <i class="fab fa-medium platform-icon"></i>
+                            <h3>Medium Publication</h3>
+                        </div>
+                        <div class="challenge-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Published: Apr 25, 2025</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-book-open"></i>
+                                <span>Category: Network Security</span>
+                            </div>
+                        </div>
+                        <div class="publication-content">
+                            <h4 class="publication-title">Unlocking Networks🌐</h4>
+                            <p class="publication-description">
+                                Explains IP and MAC addresses, ports, and firewalls using a postman analogy, highlighting their role in securing networks. Ideal for tech enthusiasts building a cybersecurity foundation.
+                            </p>
+                            <div class="publication-tags">
+                                <span class="tag">Network Security</span>
+                                <span class="tag">IP Addresses</span>
+                                <span class="tag">MAC Addresses</span>
+                                <span class="tag">Firewalls</span>
+                            </div>
+                        </div>
+                        <a href="https://medium.com/@otienojohn642/unlocking-networks-a-beginners-guide-to-cybersecurity-s-building-blocks-3c4793f35413" target="_blank" class="challenge-link">
+                            Read on Medium <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Section -->
+    <section id="academic" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Academic Background</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="academic-timeline">
+                        <div class="academic-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="academic-content">
+                                <img src="assets/images/logos/usiu.jpg" alt="USIU-Africa Logo" class="institution-logo">
+                                <div class="academic-info">
+                                    <div class="degree-program">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <h3>Security Analyst</h3>
+                                    </div>
+                                    <div class="university-name">United States International University - Africa</div>
+                                    <div class="duration">May 2025 - Aug 2025</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="academic-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="academic-content">
+                                <img src="assets/images/logos/machakos.png" alt="Machakos University Logo" class="institution-logo">
+                                <div class="academic-info">
+                                    <div class="degree-program">
+                                        <i class="fas fa-graduation-cap"></i>
+                                        <h3>Bachelor's degree in Telecommunications & IT</h3>
+                                    </div>
+                                    <div class="university-name">Machakos University</div>
+                                    <div class="duration">Oct 2021 - Apr 2025</div>
+                                    <div class="field">Engineering and Technology</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Contact</h2>
+            <div class="contact-container">
+                <!-- Contact Information Panel -->
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Contact Information</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:john.odhiambotelecom@gmail.com">john.odhiambotelecom@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+1234567890">+254757086803</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/john-otieno1/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">John Odhiambo</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Nairobi, Kenya</span>
+                        </div>
+                    </div>
+                    <div class="social-links mt-4">
+                        <h4>Connect</h4>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/john-otieno1/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/odhiamboke" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://x.com/clw_john?t=gwGkV67vBsSYIR_IiVuFaQ&s=09" class="social-link" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/i.t.s_j.o.h.n/profilecard/?igsh=MXg4cmF5bGJsM2pqbw==" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/254757086803" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Panel -->
+                <div class="contact-form" data-aos="fade-left">
+                    <h3>Send a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-send">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                    <div id="formConfirmation" class="alert alert-success mt-3" style="display: none;">
+                        Message received! I'll respond within 24h.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; <span class="copyright-year">2025</span> John Otieno. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS - Animate On Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html> 
