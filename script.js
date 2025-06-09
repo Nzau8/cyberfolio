@@ -1,11 +1,23 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize AOS
     AOS.init({
-        duration: 400,
-        easing: 'ease-in-out',
+        duration: 800,
+        easing: 'ease-out',
         once: true,
-        mirror: false
+        mirror: false,
+        disable: 'mobile',
+        startEvent: 'DOMContentLoaded',
+        offset: 120,
+        delay: 0
     });
+
+    // Specific configuration for Achievements section
+    const achievementsSection = document.querySelector('#achievements');
+    if (achievementsSection) {
+        achievementsSection.style.opacity = '1';
+        achievementsSection.style.transform = 'translateY(0)';
+        achievementsSection.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    }
 
     // Update copyright year
     const yearSpan = document.querySelector('.copyright-year');

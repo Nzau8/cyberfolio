@@ -1706,7 +1706,15 @@ textarea.form-control {
 #achievements {
     background: linear-gradient(to top left, var(--bg-secondary), var(--bg-primary));
     display: block !important;
-    background-color: red !important; /* Added for debugging */
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    perspective: 1000;
+    -webkit-perspective: 1000;
 }
 
 #academic {
@@ -2996,5 +3004,33 @@ textarea.form-control {
 
 [data-theme="dark"] .progress-text {
     color: var(--light-text);
+}
+
+.achievement-subsection {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+@media (max-width: 768px) {
+    #achievements {
+        padding: 2rem 0;
+    }
+    
+    .achievement-subsection {
+        padding: 1rem 0;
+    }
+    
+    .certification-item {
+        margin-bottom: 1rem;
+    }
+    
+    .subsections-list {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
 }
   
