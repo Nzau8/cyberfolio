@@ -13,73 +13,63 @@ document.addEventListener('DOMContentLoaded', function() {
         yearSpan.textContent = new Date().getFullYear();
     }
 
+    // Initialize EmailJS
+    (function() {
+        emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your actual public key
+    })();
+
     // Form validation and submission
     const contactForm = document.getElementById('contactForm');
     const formConfirmation = document.getElementById('formConfirmation');
 
-    // Initialize EmailJS with your public key
-    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
-
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
             
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const message = document.getElementById('message').value.trim();
-            const submitButton = this.querySelector('.btn-send');
-            const confirmation = document.getElementById('formConfirmation');
-            
-            // Basic validation
-            if (!name || !email || !message) {
-                showAlert('Please fill in all fields', 'error');
-                return;
-            }
-            
-            // Email validation
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                showAlert('Please enter a valid email address', 'error');
-                return;
-            }
-            
-            // Disable button and show loading state
-            submitButton.disabled = true;
+            // Get form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Show loading state
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalButtonText = submitButton.innerHTML;
             submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-            
-            // Prepare email parameters
-            const templateParams = {
+            submitButton.disabled = true;
+
+            // Send email using EmailJS
+            emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
                 from_name: name,
                 from_email: email,
                 message: message,
-                to_email: 'john.odhiambotelecom@gmail.com' 
-            };
-
-            // Send email using EmailJS
-            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
-                .then(function(response) {
-                    // Reset form
-                    contactForm.reset();
-                    
-                    // Show success message
-                    confirmation.style.display = 'block';
-                    confirmation.classList.add('fade-in');
-                    
-                    // Reset button state
-                    submitButton.disabled = false;
-                    submitButton.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
-                    
-                    // Hide success message after 5 seconds
+            })
+            .then(function() {
+                // Show success message
+                const confirmation = document.getElementById('formConfirmation');
+                confirmation.style.display = 'block';
+                confirmation.classList.add('show');
+                
+                // Reset form
+                document.getElementById('contactForm').reset();
+                
+                // Hide confirmation after 5 seconds
+                setTimeout(() => {
+                    confirmation.classList.remove('show');
                     setTimeout(() => {
                         confirmation.style.display = 'none';
-                        confirmation.classList.remove('fade-in');
-                    }, 5000);
-                })
-                .catch(function(error) {
-                    showAlert('Failed to send message. Please try again.', 'error');
-                    submitButton.disabled = false;
-                    submitButton.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
-                });
+                    }, 300);
+                }, 5000);
+            })
+            .catch(function(error) {
+                // Show error message
+                alert('Failed to send message. Please try again later.');
+                console.error('EmailJS error:', error);
+            })
+            .finally(function() {
+                // Reset button state
+                submitButton.innerHTML = originalButtonText;
+                submitButton.disabled = false;
+            });
         });
     }
 

@@ -107,6 +107,11 @@
     --btn-text: #ffffff;
     --footer-bg: #f8f9fa;
     --footer-text: #495057;
+
+    /* New Colors */
+    --light-bg: #f9f9f9;
+    --dark-bg: #333;
+    --light-text: #666;
 }
 
 /* Dark Mode Colors */
@@ -2956,4 +2961,38 @@ textarea.form-control {
     .certification-item {
         padding: 1rem;
     }
-} 
+}
+
+.progress-container {
+    margin-top: 1rem;
+}
+
+.progress {
+    height: 8px;
+    background-color: var(--light-bg);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+    background-color: var(--primary-color);
+    transition: width 0.6s ease;
+}
+
+.progress-text {
+    font-size: 0.875rem;
+    color: var(--text-color);
+    display: block;
+    text-align: right;
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .progress {
+    background-color: var(--dark-bg);
+}
+
+[data-theme="dark"] .progress-text {
+    color: var(--light-text);
+}
+  
