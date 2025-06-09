@@ -1705,6 +1705,7 @@ textarea.form-control {
 
 #achievements {
     background: linear-gradient(to top left, var(--bg-secondary), var(--bg-primary));
+    display: block !important;
 }
 
 #academic {
