@@ -16,12 +16,37 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <!-- Custom CSS -->
     <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="themes.css">
 </head>
 <body>
-    <!-- Theme Toggle Button -->
-    <button class="theme-toggle" aria-label="Toggle theme">
-        <i class="fas fa-sun"></i>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
     </button>
+
+    <!-- Theme Mode Selector -->
+    <div class="theme-mode-selector" id="themeModeSelector">
+        <div class="theme-mode-option" data-theme="light">
+            <i class="fas fa-sun"></i>
+            <span>Light</span>
+        </div>
+        <div class="theme-mode-option" data-theme="neural-dark">
+            <i class="fas fa-brain"></i>
+            <span>Neural Dark</span>
+        </div>
+        <div class="theme-mode-option" data-theme="cyber">
+            <i class="fas fa-microchip"></i>
+            <span>Cyber</span>
+        </div>
+        <div class="theme-mode-option" data-theme="sepia">
+            <i class="fas fa-book"></i>
+            <span>Sepia</span>
+        </div>
+        <div class="theme-mode-option" data-theme="midnight-sky">
+            <i class="fas fa-star"></i>
+            <span>Midnight Sky</span>
+        </div>
+    </div>
 
     <!-- Scroll Buttons -->
     <button class="scroll-btn scroll-top" aria-label="Scroll to top">
@@ -1542,5 +1567,43 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Custom JS -->
     <script src="script.js"></script>
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const themeModeSelector = document.getElementById('themeModeSelector');
+        const themeOptions = document.querySelectorAll('.theme-mode-option');
+        const themeIcon = themeToggle.querySelector('i');
+
+        // Toggle theme mode selector
+        themeToggle.addEventListener('click', () => {
+            themeModeSelector.classList.toggle('active');
+        });
+
+        // Set theme
+        function setTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+            
+            // Update active state
+            themeOptions.forEach(option => {
+                option.classList.toggle('active', option.dataset.theme === theme);
+            });
+
+            // Update icon
+            themeIcon.className = theme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+        }
+
+        // Theme option click handler
+        themeOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                setTheme(option.dataset.theme);
+                themeModeSelector.classList.remove('active');
+            });
+        });
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        setTheme(savedTheme);
+    </script>
 </body>
 </html> 

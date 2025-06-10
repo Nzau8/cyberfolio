@@ -1,0 +1,172 @@
+/* Theme Variables */
+:root {
+    /* Light Theme (Default) */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8fafc;
+    --text-primary: #1a202c;
+    --text-secondary: #4a5568;
+    --accent-color: #4299e1;
+    --accent-color-secondary: #3182ce;
+    --border-color: rgba(66, 153, 225, 0.1);
+    --card-bg: #ffffff;
+    --card-shadow: 0 5px 15px rgba(66, 153, 225, 0.1);
+}
+
+/* Neural Dark Theme */
+[data-theme="neural-dark"] {
+    --bg-primary: #1a1b1e;
+    --bg-secondary: #2c2d30;
+    --text-primary: #e2e8f0;
+    --text-secondary: #a0aec0;
+    --accent-color: #00ff9d;
+    --accent-color-secondary: #00cc7d;
+    --border-color: rgba(0, 255, 157, 0.2);
+    --card-bg: #2c2d30;
+    --card-shadow: 0 5px 15px rgba(0, 255, 157, 0.1);
+}
+
+/* Cyber Theme */
+[data-theme="cyber"] {
+    --bg-primary: #0a0a0f;
+    --bg-secondary: #14141f;
+    --text-primary: #00ff9d;
+    --text-secondary: #00cc7d;
+    --accent-color: #ff00ff;
+    --accent-color-secondary: #cc00cc;
+    --border-color: rgba(255, 0, 255, 0.2);
+    --card-bg: #14141f;
+    --card-shadow: 0 5px 15px rgba(255, 0, 255, 0.1);
+}
+
+/* Sepia Theme */
+[data-theme="sepia"] {
+    --bg-primary: #f4ecd8;
+    --bg-secondary: #e5d5b7;
+    --text-primary: #433422;
+    --text-secondary: #6b4c35;
+    --accent-color: #8b4513;
+    --accent-color-secondary: #6b3410;
+    --border-color: rgba(139, 69, 19, 0.2);
+    --card-bg: #e5d5b7;
+    --card-shadow: 0 5px 15px rgba(139, 69, 19, 0.1);
+}
+
+/* Midnight Sky Theme */
+[data-theme="midnight-sky"] {
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --text-primary: #e2e8f0;
+    --text-secondary: #94a3b8;
+    --accent-color: #818cf8;
+    --accent-color-secondary: #6366f1;
+    --border-color: rgba(129, 140, 248, 0.2);
+    --card-bg: #1e293b;
+    --card-shadow: 0 5px 15px rgba(129, 140, 248, 0.1);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 1000;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--card-shadow);
+}
+
+.theme-toggle:hover {
+    transform: translateY(-50%) scale(1.1);
+    background: var(--accent-color);
+    color: var(--bg-primary);
+}
+
+/* Theme Mode Selector */
+.theme-mode-selector {
+    position: fixed;
+    top: 50%;
+    right: 80px;
+    transform: translateY(-50%);
+    z-index: 1000;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+    box-shadow: var(--card-shadow);
+}
+
+.theme-mode-selector.active {
+    display: block;
+}
+
+.theme-mode-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    color: var(--text-primary);
+}
+
+.theme-mode-option:hover {
+    background: var(--accent-color);
+    color: var(--bg-primary);
+}
+
+.theme-mode-option.active {
+    background: var(--accent-color);
+    color: var(--bg-primary);
+}
+
+/* Theme Transitions */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Theme-specific Component Styles */
+[data-theme="neural-dark"] .skill-card,
+[data-theme="cyber"] .skill-card,
+[data-theme="sepia"] .skill-card,
+[data-theme="midnight-sky"] .skill-card {
+    background: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+[data-theme="neural-dark"] .progress-bar,
+[data-theme="cyber"] .progress-bar,
+[data-theme="sepia"] .progress-bar,
+[data-theme="midnight-sky"] .progress-bar {
+    background: linear-gradient(90deg, var(--accent-color), var(--accent-color-secondary));
+}
+
+[data-theme="neural-dark"] .certification-item,
+[data-theme="cyber"] .certification-item,
+[data-theme="sepia"] .certification-item,
+[data-theme="midnight-sky"] .certification-item {
+    background: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+/* Theme-specific Typography */
+[data-theme="neural-dark"] h1, [data-theme="neural-dark"] h2, [data-theme="neural-dark"] h3,
+[data-theme="cyber"] h1, [data-theme="cyber"] h2, [data-theme="cyber"] h3,
+[data-theme="sepia"] h1, [data-theme="sepia"] h2, [data-theme="sepia"] h3,
+[data-theme="midnight-sky"] h1, [data-theme="midnight-sky"] h2, [data-theme="midnight-sky"] h3 {
+    color: var(--text-primary);
+}
+
+[data-theme="neural-dark"] p, [data-theme="neural-dark"] span,
+[data-theme="cyber"] p, [data-theme="cyber"] span,
+[data-theme="sepia"] p, [data-theme="sepia"] span,
+[data-theme="midnight-sky"] p, [data-theme="midnight-sky"] span {
+    color: var(--text-secondary);
+} 
